@@ -37,7 +37,9 @@
     background-position-x: 117px;
 }
 
-.ds4 .trigger.pressed {
+/* Fixed triggers: off-white when pressed */
+.ds4 .trigger.left.pressed,
+.ds4 .trigger.right.pressed {
     opacity: 1;
     filter: grayscale(100%) brightness(200%);
 }
