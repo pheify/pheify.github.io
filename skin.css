@@ -71,6 +71,7 @@
     position: absolute;
     left: 273px;
     top: 123px;
+	background: url(Touchpad.png);
 }
 
 .ds4 .touchpad.pressed {
@@ -83,6 +84,7 @@
     position: absolute;
     left: 423px;
     bottom: 288px;
+	background: url(Meta.png);
 }
 
 .ds4 .meta.pressed {
@@ -134,6 +136,8 @@
 
 .ds4 .button.pressed {
     background-position-y: 58px;
+	background: url(Face.png);
+	filter: hue-rotate(90deg);
 }
 
 .ds4 .a {
@@ -173,10 +177,12 @@
 
 .ds4 .stick.pressed.left {
     background-position-x: 216px;
+	filter: hue-rotate(90deg);
 }
 
 .ds4 .stick.pressed.right {
     background-position-x: 106px;
+	filter: hue-rotate(90deg);
 }
 
 .ds4 .stick.right {
@@ -228,6 +234,7 @@
 
 .ds4 .face.pressed {
     background-position-y: 69px;
+	filter: hue-rotate(90deg);
 }
 
 /*END PS5 Controller Styling*/
