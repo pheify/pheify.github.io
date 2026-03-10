@@ -134,7 +134,6 @@
     left: 642px;
 }
 
-/* Base face buttons */
 .ds4 .button {
     position: absolute;
     width: 58px;
@@ -142,25 +141,31 @@
     background: url(Face.png);
 }
 
-/* Pressed face buttons: off-white base + orange symbols */
-.ds4 .button.pressed.a {
-    background: linear-gradient(#f0f0f0, #f0f0f0) padding-box, url(Face.png) 0 -58px no-repeat;
-}
-.ds4 .button.pressed.b {
-    background: linear-gradient(#f0f0f0, #f0f0f0) padding-box, url(Face.png) -62px -58px no-repeat;
-}
-.ds4 .button.pressed.x {
-    background: linear-gradient(#f0f0f0, #f0f0f0) padding-box, url(Face.png) -124px -58px no-repeat;
-}
-.ds4 .button.pressed.y {
-    background: linear-gradient(#f0f0f0, #f0f0f0) padding-box, url(Face.png) 58px -58px no-repeat;
+.ds4 .button.pressed {
+    background-position-y: 58px;
+    background: url(Face.png);
+    filter: grayscale(100%) brightness(200%);
 }
 
-/* Default positions of buttons */
-.ds4 .a { background-position: 0 0; left: 62px; }
-.ds4 .b { background-position: -62px 0; top: 62px; }
-.ds4 .x { background-position: -124px 0; top: 62px; }
-.ds4 .y { background-position: 58px 0; left: 62px; }
+.ds4 .a {
+    background-position: 0 0;
+    left: 62px;
+}
+
+.ds4 .b {
+    background-position: -62px 0;
+    top: 62px;
+}
+
+.ds4 .x {
+    background-position: -124px 0;
+    top: 62px;
+}
+
+.ds4 .y {
+    background-position: 58px 0;
+    left: 62px;
+}
 
 .ds4 .sticks {
     position: absolute;
@@ -214,10 +219,25 @@
     height: 58px;
 }
 
-.ds4 .face.up { left: 48px; background-position: -62px 0px; }
-.ds4 .face.down { left: 48px; background-position: 0px 0; }
-.ds4 .face.left { top: 48px; background-position: 140px 0; }
-.ds4 .face.right { top: 48px; background-position: 69px 0; }
+.ds4 .face.up {
+    left: 48px;
+    background-position: -62px 0px;
+}
+
+.ds4 .face.down {
+    left: 48px;
+    background-position: 0px 0;
+}
+
+.ds4 .face.left {
+    top: 48px;
+    background-position: 140px 0;
+}
+
+.ds4 .face.right {
+    top: 48px;
+    background-position: 69px 0;
+}
 
 .ds4 .face.pressed {
     background-position-y: 69px;
