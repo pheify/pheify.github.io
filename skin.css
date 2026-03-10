@@ -2,7 +2,7 @@
 
 .controller.ds4 {
     background: url(Base.png);
-	height: 713px;
+    height: 713px;
     width: 903px;
     position: absolute;
 }
@@ -25,7 +25,7 @@
     width: 117px;
     height: 107;
     background: url(Trigger.png);
-	opacity: 0;
+    opacity: 0;
 }
 
 .ds4 .trigger.left {
@@ -37,11 +37,16 @@
     background-position-x: 117px;
 }
 
+.ds4 .trigger.pressed {
+    opacity: 1;
+    filter: grayscale(100%) brightness(200%);
+}
+
 .ds4 .bumper {
     width: 119px;
     height: 41px;
     background: url(Bumper.png);
-	opacity: 0;
+    opacity: 0;
 }
 
 .ds4 .bumpers {
@@ -71,7 +76,7 @@
     position: absolute;
     left: 273px;
     top: 123px;
-	background: url(Touchpad.png);
+    background: url(Touchpad.png);
 }
 
 .ds4 .touchpad.pressed {
@@ -84,7 +89,7 @@
     position: absolute;
     left: 423px;
     bottom: 288px;
-	background: url(Meta.png);
+    background: url(Meta.png);
 }
 
 .ds4 .meta.pressed {
@@ -101,7 +106,7 @@
 
 .ds4 .back, .ds4 .start {
     background: url(Start.png);
-	width: 25px;
+    width: 25px;
     height: 41px;
     opacity: 0;
 }
@@ -136,8 +141,8 @@
 
 .ds4 .button.pressed {
     background-position-y: 58px;
-	background: url(Face.png);
-	filter: hue-rotate(90deg);
+    background: url(Face.png);
+    filter: grayscale(100%) brightness(200%);
 }
 
 .ds4 .a {
@@ -171,18 +176,18 @@
 .ds4 .stick {
     position: absolute;
     background: url(Stick.png);
-	height: 106px;
+    height: 106px;
     width: 106px;
 }
 
 .ds4 .stick.pressed.left {
     background-position-x: 216px;
-	filter: hue-rotate(90deg);
+    filter: grayscale(100%) brightness(180%);
 }
 
 .ds4 .stick.pressed.right {
     background-position-x: 106px;
-	filter: hue-rotate(90deg);
+    filter: grayscale(100%) brightness(180%);
 }
 
 .ds4 .stick.right {
@@ -199,7 +204,7 @@
 
 .ds4 .face {
     background: url(Dpad.png);
-	position: absolute;
+    position: absolute;
 }
 
 .ds4 .face.up, .ds4 .face.down {
@@ -234,7 +239,7 @@
 
 .ds4 .face.pressed {
     background-position-y: 69px;
-	filter: hue-rotate(90deg);
+    filter: grayscale(100%) brightness(200%);
 }
 
 /*END PS5 Controller Styling*/
